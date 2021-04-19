@@ -8,8 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'example-angular-app-with-clarity-widget';
   config = {
-    apiToken: '',
-    domain: '',
     fund: '',
     metricsIds: [],
   }

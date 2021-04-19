@@ -8,28 +8,31 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## What is it?
 
-This project is an example of how to integrate ClarityAI Widgets inside an Angular app. You will need to update the configuration file with The right domain and token, to get a valid token go to the user administration menu in ClarityAI webapp.
+This project is an example of how to integrate ClarityAI Widgets inside an Angular app. You will need to update the configuration properties in the clarity-widget component `clarity-widget.component.ts` with The right domain and token, to get a valid token go to the user administration menu in ClarityAI webapp:
 
 ```
-{
-  "widgetOriginDomain": "https://example.domain.com",
-  "customizationOptions": {
+widgetOriginDomain = 'https://sample.com'
+  apiToken = 'YOUR_API_TOKEN'
+  fund = 'A_FUND_ISIN'
+  metricsIds = 'METRIC_ID_1, METRIC_ID_2'
+  customizationObject = {
     fontFamily: 'Times New Roman',
-      baseFontSize: '12px',
-      tables: {
-        headerBgColor: '#ddd',
-        bodyBgColor: '#fff',
-        borderColor: '#ddd',
-      },
-  },
-  "apiToken": "COPY_YOUR_TOKEN_HERE"
-}
+    // Google fonts can also be used: 
+    // gFontFamily: 'Times+New+Roman',
+    baseFontSize: '12px',
+    fontColor: 'rgb(16, 21, 46)',
+    tables: {
+      headerBgColor: '#ddd',
+      bodyBgColor: '#fff',
+      borderColor: '#ddd',
+    },
+  }
 ```
 
-Once you have updated the configuration you should see the widget in the sample page, you can change the widget options in the form and see the result.
+Once you have updated the configuration you should see the widget in the sample page.
 
 ## What and where to look
-`ClarityWidget.js` is an example component that can be used more or less as is. It contains a clear example on how
+`clarity-widget.component.ts` is an example component that can be used more or less as is. It contains a clear example on how
 the library at package `@clarity-ai/widget` can be used.
 
 ## Clarity widget library
@@ -46,11 +49,13 @@ You can call it more than once, if the js is already loaded it won't inject it a
 ### Refresh: `widget.refresh(DomElement)`
 
 Adds the widget to the DOM Element Node provided as first argument:
+
 ```javascript
    widget.refresh(someElement);
 ```
 
 The element should look like this: 
+
 ```html
     <div
       data-clarity-widget

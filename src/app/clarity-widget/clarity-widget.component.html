@@ -1,3 +1,6 @@
+<div *ngIf="this.apiToken === '' || this.widgetOriginDomain === ''">
+  <h3>Please fill in the widget domain and token in 'clarity-widget.component.ts' </h3>
+</div>
 <div
   data-clarity-widget
   [attr.data-token]="this.apiToken"
@@ -7,6 +10,5 @@
   [attr.data-metrics-ids]="this.metricsIds"
   [attr.data-fund]="this.fund"
   [attr.data-style-attributes-json]="this.styleJSON"
-  [attr.data-ref]="this.containerRef"
 >
 </div>
