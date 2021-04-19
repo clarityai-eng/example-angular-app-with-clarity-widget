@@ -4,14 +4,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## What is it?
 
 This project is an example of how to integrate ClarityAI Widgets inside an Angular app. You will need to update the configuration properties in the clarity-widget component `clarity-widget.component.ts` with The right domain and token, to get a valid token go to the user administration menu in ClarityAI webapp:
 
 ```
-widgetOriginDomain = 'https://sample.com'
+  widgetOriginDomain = 'https://sample.com'
   apiToken = 'YOUR_API_TOKEN'
   fund = 'A_FUND_ISIN'
   metricsIds = 'METRIC_ID_1, METRIC_ID_2'
@@ -32,8 +32,8 @@ widgetOriginDomain = 'https://sample.com'
 Once you have updated the configuration you should see the widget in the sample page.
 
 ## What and where to look
-`clarity-widget.component.ts` is an example component that can be used more or less as is. It contains a clear example on how
-the library at package `@clarity-ai/widget` can be used.
+`clarity-widget.component.ts` is an example component that can be used more or less as is (you will need to copy also the definition file `clarity-ai-widget.d.ts` that is inside the component folder or the compiler might complain about the import).
+This component contains an example on how the library at package `@clarity-ai/widget` can be used.
 
 ## Clarity widget library
 It provides a simple API to load and add widgets to a given container.
