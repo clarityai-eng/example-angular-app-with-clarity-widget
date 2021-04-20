@@ -8,7 +8,7 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app 
 
 ## What is it?
 
-This project is an example of how to integrate ClarityAI Widgets inside an Angular app. You will need to update the configuration properties in the clarity-widget component `clarity-widget.component.ts` with The right domain and token, to get a valid token go to the user administration menu in ClarityAI webapp:
+This project is an example of how to integrate ClarityAI Widgets inside an Angular app. You will need to update the configuration properties in the clarity-widget component `clarity-widget.component.ts` with The right domain and token (to get a valid token go to the user administration menu in ClarityAI webapp):
 
 ```
   widgetOriginDomain = 'https://sample.com'
@@ -32,7 +32,7 @@ This project is an example of how to integrate ClarityAI Widgets inside an Angul
 Once you have updated the configuration you should see the widget in the sample page.
 
 ## What and where to look
-`clarity-widget.component.ts` is an example component that can be used more or less as is (you will need to copy also the definition file `clarity-ai-widget.d.ts` that is inside the component folder or the compiler might complain about the import).
+`clarity-widget.component.ts` is an example component that can be used more or less as it is (you will need to copy also the definition file `clarity-ai-widget.d.ts` that is inside the component folder or the compiler might complain about the import).
 This component contains an example on how the library at package `@clarity-ai/widget` can be used.
 
 ## Clarity widget library
@@ -41,9 +41,11 @@ It provides a simple API to load and add widgets to a given container.
 ### Load: `widget.load(domain)`
 
 Injects the Clarity Widget javascript from the provided domain (with protocol):
-    ```javascript
-      widget.load('https://some.example.com');
-    ```
+
+```javascript
+  widget.load('https://some.example.com');
+```
+
 You can call it more than once, if the js is already loaded it won't inject it again.
 
 ### Refresh: `widget.refresh(DomElement)`
@@ -93,17 +95,13 @@ The element should look like this:
 
 ## Contributing
 
-### Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
 ### Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ### Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `npm e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ### Further help
 
