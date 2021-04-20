@@ -22,4 +22,11 @@ describe('ClarityWidgetComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  describe('The token or domain are not set', ()=> {
+    it('should show the help message', () => {
+      const helpMsgElem = fixture.nativeElement.querySelector('h3');
+      expect(helpMsgElem.innerHTML).toMatch('Please fill in the widget domain')
+    });
+  })
 });
