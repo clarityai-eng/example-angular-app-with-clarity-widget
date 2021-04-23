@@ -1,4 +1,4 @@
-import widget from '@clarity-ai/widget';
+import * as widget from '@clarity-ai/widget';
 import { Component, ElementRef, OnChanges, AfterViewInit, ViewChild } from '@angular/core';
 
 @Component({

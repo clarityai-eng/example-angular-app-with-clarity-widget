@@ -4,14 +4,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `npm install` to download all dependencies and `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm install` to download all dependencies and `npm start` for a dev server. 
+
+Navigate to http://localhost:4200/. 
+
+The app will automatically reload if you change any of the source files.
 
 ## What is it?
 
-This project is an example of how to integrate ClarityAI Widgets inside an Angular app. You will need to update the configuration properties in the clarity-widget component `clarity-widget.component.ts` with The right domain and token (to get a valid token go to the user administration menu in ClarityAI webapp):
+This project is an example of how to integrate ClarityAI Widgets inside an Angular app. You will need to update the configuration properties in the clarity-widget component [clarity-widget.component.ts](src/app/clarity-widget/clarity-widget.component.ts) with the right domain and token (to get a valid token go to the user administration menu in ClarityAI webapp):
 
 ```
-  widgetOriginDomain = 'https://sample.com'
+  widgetOriginDomain = 'https://go.clarity.ai'
   apiToken = 'YOUR_API_TOKEN'
   fund = 'A_FUND_ISIN'
   metricsIds = 'METRIC_ID_1, METRIC_ID_2'
