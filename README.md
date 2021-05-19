@@ -18,7 +18,7 @@ This project is an example of how to integrate ClarityAI Widgets inside an Angul
   widgetOriginDomain = 'https://go.clarity.ai'
   apiToken = 'YOUR_API_TOKEN'
   fund = 'A_FUND_ISIN'
-  metricsIds = 'METRIC_ID_1, METRIC_ID_2'
+  scoresIds = 'METRIC_ID_1, METRIC_ID_2'
   customizationObject = {
     fontFamily: 'Times New Roman',
     // Google fonts can also be used: 

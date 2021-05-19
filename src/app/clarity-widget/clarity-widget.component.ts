@@ -13,7 +13,7 @@ export class ClarityWidgetComponent implements AfterViewInit, OnChanges {
   widgetOriginDomain = ''
   apiToken = ''
   fund = 'LU0147308422'
-  metricsIds = 'ENERGYUSETOTAL, WATER_USE'
+  scoresIds = 'ENERGYUSETOTAL, WATER_USE'
   customizationObject = {
     // fontFamily: 'Times New Roman',
     // Google fonts can also be used: 
