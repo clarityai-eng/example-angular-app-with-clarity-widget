@@ -47,7 +47,7 @@ It provides a simple API to load and add widgets to a given container.
 Injects the Clarity Widget javascript from the provided domain (with protocol):
 
 ```javascript
-  widget.load('https://some.example.com');
+  widget.load('https://go.clarity.ai');
 ```
 
 You can call it more than once, if the js is already loaded it won't inject it again.
