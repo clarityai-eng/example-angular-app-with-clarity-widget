@@ -47,7 +47,7 @@ It provides a simple API to load and add widgets to a given container.
 Injects the Clarity Widget javascript from the provided domain (with protocol):
 
 ```javascript
-  widget.load('https://some.example.com');
+  widget.load('https://go.clarity.ai');
 ```
 
 You can call it more than once, if the js is already loaded it won't inject it again.
@@ -65,13 +65,15 @@ The element should look like this:
 ```html
     <div
       data-clarity-widget
-      data-token="SomeValidToken"
       data-lang="en"
       data-module="some-module"
       data-entities="funds"
       data-fund="SomeFundIsin"
+      data-sections="KEY_SCORES"
       data-style-attributes-json="{}"
       data-custom-css="//example.com/test.css"
+      data-token="your-token"
+      data-end-user-id="some-user-id"
     ></div>
 ```
  * `data-clarity-widget` (Mandatory): This is a mandatory attribute 
@@ -96,6 +98,8 @@ The element should look like this:
        }
     ``` 
  * `data-custom-css`: Alternatively a CSS can be provided by url to customize the widget styles.
+ * `data-end-user-id`: A unique user id.
+ * `data-sections`: The optional sections that you want to add to the widget (ie: 'KEY_SCORES').
 
 ## Contributing
 
