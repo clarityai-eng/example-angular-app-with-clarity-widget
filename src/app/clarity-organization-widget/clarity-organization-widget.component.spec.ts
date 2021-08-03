@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClarityWidgetComponent } from './clarity-widget.component';
+import { ClarityOrganizationWidgetComponent } from './clarity-organization-widget.component';
 
-describe('ClarityWidgetComponent', () => {
-  let component: ClarityWidgetComponent;
-  let fixture: ComponentFixture<ClarityWidgetComponent>;
+describe('ClarityOrganizationWidgetComponent', () => {
+  let component: ClarityOrganizationWidgetComponent;
+  let fixture: ComponentFixture<ClarityOrganizationWidgetComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ClarityWidgetComponent ]
+      declarations: [ ClarityOrganizationWidgetComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ClarityWidgetComponent);
+    fixture = TestBed.createComponent(ClarityOrganizationWidgetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -28,5 +28,5 @@ describe('ClarityWidgetComponent', () => {
       const helpMsgElem = fixture.nativeElement.querySelector('h3');
       expect(helpMsgElem.innerHTML).toMatch('Please fill in the widget domain')
     });
-  })
+  });
 });
