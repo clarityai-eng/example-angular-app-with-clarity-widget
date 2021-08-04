@@ -12,7 +12,7 @@ The app will automatically reload if you change any of the source files.
 
 ## What is it?
 
-This project is an example of how to integrate ClarityAI Widgets inside an Angular app. You will need to update the configuration properties in the clarity-widget component [clarity-widget.component.ts](src/app/clarity-widget/clarity-widget.component.ts) with the right domain and token (to get a valid token go to the user administration menu in ClarityAI webapp):
+This project is an example of how to integrate ClarityAI Widgets inside an Angular app. You will need to update the configuration properties in the clarity-widget component [clarity-organization-widget.component.ts](src/app/clarity-organization-widget/clarity-organization-widget.component.ts) with the right domain and token (to get a valid token go to the user administration menu in ClarityAI webapp):
 
 ```
   widgetOriginDomain = 'https://go.clarity.ai'
@@ -36,7 +36,7 @@ This project is an example of how to integrate ClarityAI Widgets inside an Angul
 Once you have updated the configuration you should see the widget in the sample page.
 
 ## What and where to look
-`clarity-widget.component.ts` is an example component that can be used more or less as it is (you will need to copy also the definition file `clarity-ai-widget.d.ts` that is inside the component folder or the compiler might complain about the import).
+`clarity-organization-widget.component.ts` is an example component that can be used more or less as it is (you will need to copy also the definition file `clarity-ai-widget.d.ts` that is inside the component folder or the compiler might complain about the import).
 This component contains an example on how the library at package `@clarity-ai/widget` can be used.
 
 ## Clarity widget library

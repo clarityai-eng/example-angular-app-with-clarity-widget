@@ -1,5 +1,5 @@
 <div *ngIf="this.apiToken === '' || this.widgetOriginDomain === ''">
-  <h3>Please fill in the widget domain and token in 'clarity-widget.component.ts' </h3>
+  <h3>Please fill in the widget domain and token in 'clarity-organization-widget.component.ts' </h3>
 </div>
 <div
   #ref
@@ -7,9 +7,10 @@
   [attr.data-token]="this.apiToken"
   data-lang="en"
   data-module="esg-risk"
-  data-entities="funds"
+  data-entities="organizations"
+  data-sections="KEY_SCORES,INDUSTRY_SCORES"
   [attr.data-scores-ids]="this.scoresIds"
-  [attr.data-fund]="this.fund"
+  [attr.data-isin]="this.isin"
   [attr.data-style-attributes-json]="this.styleJSON"
 >
 </div>
