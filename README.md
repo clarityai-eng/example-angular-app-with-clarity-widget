@@ -12,7 +12,7 @@ The app will automatically reload if you change any of the source files.
 
 ## What is it?
 
-This project is an example of how to integrate ClarityAI Widgets inside an Angular app. You will need to update the configuration properties in the clarity-widget component [clarity-organization-widget.component.ts](src/app/clarity-funds-widget/clarity-widget.component.ts) with the right domain and token (to get a valid token go to the user administration menu in ClarityAI webapp):
+This project is an example of how to integrate ClarityAI Widgets inside an Angular app. You will need to update the configuration properties in the clarity-widget component [clarity-organization-widget.component.ts](src/app/clarity-organization-widget/clarity-organization-widget.component.ts) with the right domain and token (to get a valid token go to the user administration menu in ClarityAI webapp):
 
 ```
   widgetOriginDomain = 'https://go.clarity.ai'
